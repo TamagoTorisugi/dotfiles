@@ -1,0 +1,6 @@
+alias ls='ls -G'
+alias la='ls -a'
+alias vi='vim'
+alias fuck='eval $(thefuck $(fc -ln -1))'
+alias FUCK='fuck'
+alias f='fuck'
