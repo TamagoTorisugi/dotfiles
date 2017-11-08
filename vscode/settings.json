@@ -1,0 +1,15 @@
+{
+    "vim.disableAnnoyingNeovimMessage": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "git.path": "/usr/bin/git",
+    "latex-workshop.latex.toolchain": [{
+        "command": "ptex2pdf",
+        "args": [
+            "-l",
+            "-ot",
+            "-kanji=utf8 -synctex=1",
+            "%DOC%"
+        ]
+    }],
+    "latex-workshop.chktex.enabled": true
+}
