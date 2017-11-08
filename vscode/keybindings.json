@@ -1,7 +1,7 @@
 // 既定値を上書きするには、このファイル内にキー バインドを挿入します
 [
     {
-        "key": "cmd+f1",
+        "key": "alt+f1",
         "command": "latex-workshop.tab",
         "when": "editorTextFocus"
     },

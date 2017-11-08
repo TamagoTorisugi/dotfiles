@@ -11,5 +11,6 @@
             "%DOC%"
         ]
     }],
-    "latex-workshop.chktex.enabled": true
+    "latex-workshop.chktex.enabled": true,
+    "workbench.iconTheme": "material-icon-theme"
 }
