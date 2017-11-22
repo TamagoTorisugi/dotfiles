@@ -1,16 +1,53 @@
 {
-    "vim.disableAnnoyingNeovimMessage": true,
-    "workbench.startupEditor": "newUntitledFile",
-    "git.path": "/usr/bin/git",
-    "latex-workshop.latex.toolchain": [{
-        "command": "ptex2pdf",
-        "args": [
-            "-l",
-            "-ot",
-            "-kanji=utf8 -synctex=1",
-            "%DOC%"
-        ]
-    }],
-    "latex-workshop.chktex.enabled": true,
-    "workbench.iconTheme": "material-icon-theme"
+    "terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\bash.exe",
+    "latex-workshop.latex.toolchain": [
+        {
+            "command": "ptex2pdf",
+            "args": [
+                "-l",
+                "-ot",
+                "-kanji=utf8 -synctex=1",
+                "%DOC%"
+            ]
+        },
+        {
+            "command": "pbibtex",
+            "args": [
+                "%DOCFILE%",
+                "-kanji=utf8"
+            ]
+        },
+        {
+            "command": "ptex2pdf",
+            "args": [
+                "-l",
+                "-ot",
+                "-kanji=utf8 -synctex=1",
+                "%DOC%"
+            ]
+        },
+        {
+            "command": "ptex2pdf",
+            "args": [
+                "-l",
+                "-ot",
+                "-kanji=utf8 -synctex=1",
+                "%DOC%"
+            ]
+        }
+],
+// "editor.renderControlCharacters": true,
+"vim.disableAnnoyingNeovimMessage": true,
+
+"python.autoComplete.extraPaths": ["C/Python36/Lib/site-packages/"],
+"python.linting.pylintEnabled": false, 
+"python.linting.flake8Enabled": true, 
+"python.formatting.formatOnSave": true, 
+"python.sortImports.args": [ "-sl", "-fss" ],
+"python.formatting.provider": "yapf",
+"python.formatting.yapfArgs": [
+    "--style",
+    "{based_on_style: google; SPLIT_BEFORE_NAMED_ASSIGNS: False, DEDENT_CLOSING_BRACKETS: False, COLUMN_LIMIT: 79}"
+],
+"workbench.startupEditor": "newUntitledFile",
 }
